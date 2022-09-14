@@ -1,10 +1,17 @@
 # Stable Matching 
 Stable matching problem is solved by implementing Gale–Shapley algorithm.  
 Input for the program can be provided by stdin or by piping file, matching is provided in stdout.  
+#### Read from files
 ```
 cat friends_in.txt | python3 sm.py
 cat illiad_in.txt | python3 sm.py
 ```
+#### Compare result with the expected output (no output from diff = no difference)
+```
+cat illiad_in.txt | python3 sm.py > result.txt
+diff -w illiad_out.txt result.txt 
+```
+
 ## Gale-Shapley algorithm
 ```
 Initially all m∈M and w∈W are free
