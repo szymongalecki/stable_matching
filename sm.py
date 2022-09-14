@@ -1,6 +1,8 @@
 """
 readig from files : pipe file to the program as an input
-example: cat filename.txt | python3 program.py
+
+cat friends_in.txt | python3 sm.py
+cat illiad_in.txt | python3 sm.py
 """
 
 n, names = 0, {}
